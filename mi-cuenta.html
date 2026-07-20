@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi cuenta | Ruiz Corredor de Seguros</title>
+    <meta name="description" content="Área privada para clientes de Ruiz Corredor de Seguros.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="referrer" content="same-origin">
+    <meta name="theme-color" content="#171724">
+    <link rel="icon" href="assets/ruiz-corredor-mark.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=area-cliente-3">
+  </head>
+  <body class="theme-night account-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Ruiz Corredor, inicio"><img class="brand-mark" src="assets/ruiz-corredor-mark.png" alt="" width="44" height="50"><span class="brand-copy"><img class="brand-wordmark" src="assets/ruiz-corredor-wordmark.png" alt="Ruiz Corredor"><small>Correduría Online</small><small>Correduría en Valladolid</small></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal"><span></span><span></span><span></span><span class="sr-only">Abrir menú</span></button><nav class="main-nav" id="menu-principal" aria-label="Menú principal"><a href="sobre-mi.html#quienes-somos">Quiénes somos</a><a class="nav-feature" href="sobre-mi.html#como-trabajamos">Cómo trabajamos</a><a href="sobre-mi.html#donde-estamos">Dónde estamos</a><a href="otros-seguros.html">Seguros</a><a class="nav-account" href="mi-cuenta.html" aria-label="Mi cuenta" aria-current="page"><svg class="account-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.6-4 3-6 7-6s6.4 2 7 6"></path></svg><span class="account-tooltip" role="tooltip">Mi cuenta</span></a><a class="nav-cta" href="contacto.html">Consulta</a></nav></div></header>
+
+    <main id="contenido" class="account-main">
+      <section class="account-access" id="acceso-cliente" aria-labelledby="access-title">
+        <div class="account-access-copy reveal">
+          <a class="breadcrumb" href="index.html">Inicio</a>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Área privada</p>
+          <h1 id="access-title">Tus seguros, en un lugar seguro</h1>
+          <p>Consulta tus pólizas y solicita una revisión cuando lo necesites. El alta no es pública: validamos personalmente cada cuenta antes de activarla.</p>
+          <ul class="security-points" aria-label="Medidas de acceso">
+            <li><span aria-hidden="true">✓</span> Acceso solo por invitación de la correduría</li>
+            <li><span aria-hidden="true">✓</span> Verificación en dos pasos</li>
+            <li><span aria-hidden="true">✓</span> Sesión protegida y cierre automático</li>
+          </ul>
+        </div>
+        <div class="login-card reveal">
+          <div class="login-lock" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"></path></svg></div>
+          <p class="eyebrow">Acceso de clientes</p>
+          <h2>Entra en tu cuenta</h2>
+          <p class="login-help">Utiliza el correo al que enviamos tu invitación.</p>
+          <form class="account-login-form" novalidate>
+            <label>Correo electrónico<input type="email" name="email" autocomplete="username" required></label>
+            <label>Contraseña<input type="password" name="password" autocomplete="current-password" required></label>
+            <div class="login-options"><label class="checkbox-row"><input type="checkbox" name="remember"><span>Recordar mi correo</span></label><a href="contacto.html?motivo=acceso">¿No puedes acceder?</a></div>
+            <button class="button primary full" type="submit">Acceder de forma segura</button>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+          <div class="invite-note"><strong>¿Todavía no tienes acceso?</strong><p>Solicítalo y comprobaremos que eres cliente antes de enviarte una invitación de un solo uso.</p><a href="contacto.html?motivo=alta-cuenta">Solicitar acceso</a></div>
+        </div>
+      </section>
+
+      <section class="client-dashboard" id="panel-cliente" hidden aria-labelledby="dashboard-title">
+        <div class="dashboard-topbar">
+          <div><p class="eyebrow"><span class="dot" aria-hidden="true"></span>Área privada</p><h1 id="dashboard-title">Buenos días, María</h1><p>Esta es la situación actual de tus seguros.</p></div>
+          <div class="secure-session"><span class="secure-session-state"><i aria-hidden="true">●</i> Sesión protegida</span><button class="logout-button" type="button" data-account-logout><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-3M10 12h11M18 9l3 3-3 3"></path></svg>Cerrar sesión</button></div>
+        </div>
+
+        <div class="client-summary">
+          <div class="client-avatar" aria-hidden="true">MR</div>
+          <div><small>Cliente</small><strong>María Ruiz Consultoría, S.L.</strong><span>Persona jurídica · B-47654321</span></div>
+          <dl><div><dt>Representante</dt><dd>María Ruiz López</dd></div><div><dt>Email</dt><dd>maria@ejemplo.es</dd></div><div><dt>Teléfono</dt><dd>••• ••• 482</dd></div></dl>
+          <a href="contacto.html?motivo=actualizar-datos">Actualizar datos</a>
+        </div>
+
+        <div class="account-tabs" role="tablist" aria-label="Gestiones de la cuenta">
+          <button id="tab-polizas" role="tab" aria-selected="true" aria-controls="panel-polizas">Mis pólizas <span>6</span></button>
+          <button id="tab-renegociacion" role="tab" aria-selected="false" aria-controls="panel-renegociacion" tabindex="-1">Renegociación</button>
+        </div>
+
+        <section id="panel-polizas" role="tabpanel" aria-labelledby="tab-polizas">
+          <div class="policy-heading"><div><h2>Mis pólizas</h2><p>Las fechas son orientativas. No deje para el último día la cancelación o renovación de sus pólizas.</p></div><div class="policy-legend"><span><i class="status-dot active"></i>En vigor</span><span><i class="status-dot warning"></i>Cancelación próxima</span></div></div>
+          <div class="policy-groups">
+            <section class="policy-group"><h3><span>RC</span> Responsabilidad civil</h3><article class="policy-row"><div><small>RC-2026-0148</small><strong>RC profesional consultoría</strong><span>Allianz</span></div><dl><div><dt>En vigor hasta</dt><dd>14 marzo 2027</dd></div><div><dt>Cancelar antes del</dt><dd>14 febrero 2027</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=RC-2026-0148&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+            <section class="policy-group"><h3><span>PA</span> Patrimonio</h3><article class="policy-row"><div><small>PA-2025-0831</small><strong>Multirriesgo oficina</strong><span>AXA</span></div><dl><div><dt>En vigor hasta</dt><dd>2 noviembre 2026</dd></div><div><dt>Cancelar antes del</dt><dd class="date-warning">2 octubre 2026</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=PA-2025-0831&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+            <section class="policy-group"><h3><span>SA</span> Salud</h3><article class="policy-row"><div><small>SA-2026-0422</small><strong>Salud empresa</strong><span>Adeslas</span></div><dl><div><dt>En vigor hasta</dt><dd>31 diciembre 2026</dd></div><div><dt>Cancelar antes del</dt><dd>30 noviembre 2026</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=SA-2026-0422&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+            <section class="policy-group"><h3><span>AL</span> Alquiler</h3><article class="policy-row"><div><small>AL-2026-0079</small><strong>Impago de alquiler</strong><span>ARAG</span></div><dl><div><dt>En vigor hasta</dt><dd>8 junio 2027</dd></div><div><dt>Cancelar antes del</dt><dd>8 mayo 2027</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=AL-2026-0079&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+            <section class="policy-group"><h3><span>VI</span> Vida</h3><article class="policy-row"><div><small>VI-2024-1176</small><strong>Vida riesgo</strong><span>Zurich</span></div><dl><div><dt>En vigor hasta</dt><dd>20 enero 2027</dd></div><div><dt>Cancelar antes del</dt><dd>20 diciembre 2026</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=VI-2024-1176&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+            <section class="policy-group"><h3><span>OT</span> Otros</h3><article class="policy-row"><div><small>CY-2026-0310</small><strong>Ciberprotección negocio</strong><span>Hiscox</span></div><dl><div><dt>En vigor hasta</dt><dd>5 abril 2027</dd></div><div><dt>Cancelar antes del</dt><dd>5 marzo 2027</dd></div></dl><a class="policy-action" href="contacto.html?motivo=renegociacion&amp;poliza=CY-2026-0310&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Renegociar</a></article></section>
+          </div>
+        </section>
+
+        <section id="panel-renegociacion" role="tabpanel" aria-labelledby="tab-renegociacion" hidden>
+          <div class="renegotiation-card"><div><p class="eyebrow">Revisión personalizada</p><h2>¿Quieres renegociar una póliza?</h2><p>Selecciona la póliza. Te llevaremos al cuestionario de contacto con tu nombre completo y el número de póliza ya incluidos.</p></div><form class="renegotiation-form"><label>Póliza que quieres revisar<select name="policy"><option value="RC-2026-0148">RC-2026-0148 · RC profesional consultoría</option><option value="PA-2025-0831">PA-2025-0831 · Multirriesgo oficina</option><option value="SA-2026-0422">SA-2026-0422 · Salud empresa</option><option value="AL-2026-0079">AL-2026-0079 · Impago de alquiler</option><option value="VI-2024-1176">VI-2024-1176 · Vida riesgo</option><option value="CY-2026-0310">CY-2026-0310 · Ciberprotección negocio</option></select></label><a class="button primary" data-renegotiation-link href="contacto.html?motivo=renegociacion&amp;poliza=RC-2026-0148&amp;nombre=Mar%C3%ADa%20Ruiz%20L%C3%B3pez">Ir al cuestionario</a></form></div>
+        </section>
+        <p class="dashboard-demo-note">Vista de demostración: los nombres, compañías, números y fechas mostrados son ficticios.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer compact-footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/ruiz-corredor-mark.png" alt="" width="34" height="39"><div><strong>Ruiz Corredor de Seguros</strong><p>[Titular], corredor de seguros · NIF [—] · Inscripción [clave]</p></div></div><nav class="footer-links legal-links-wide" aria-label="Información legal"><a href="aviso-legal.html">Aviso legal</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="informacion-previa.html">Información previa</a><a href="reclamaciones.html">Reclamaciones</a></nav><div class="footer-meta"><span>© <span id="year"></span></span></div></div></footer>
+    <script src="script.js?v=cookies-2"></script>
+    <script src="account.js?v=area-cliente-2"></script>
+  </body>
+</html>
