@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -15,16 +15,45 @@
     <meta property="og:description" content="Corredor de seguros independiente para microempresas, alquiler seguro y seguros de salud con preexistencias.">
     <meta property="og:url" content="https://garjosma30-cyber.github.io/RuizCorredor/">
     <meta property="og:image" content="https://garjosma30-cyber.github.io/RuizCorredor/assets/portada-paisaje-marionetas.png">
+    <meta property="og:image:width" content="1672">
+    <meta property="og:image:height" content="941">
+    <meta property="og:image:alt" content="Ruiz Corredor de Seguros: asesoramiento para empresas, alquiler y salud">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ruiz Corredor de Seguros | Microempresas, alquiler y salud">
+    <meta name="twitter:description" content="Corredor de seguros independiente para microempresas, alquiler seguro y seguros de salud con preexistencias.">
+    <meta name="twitter:image" content="https://garjosma30-cyber.github.io/RuizCorredor/assets/portada-paisaje-marionetas.png">
     <!-- publication-meta:end -->
-    <link rel="canonical" href="https://garjosma30-cyber.github.io/RuizCorredor/">
     <meta name="theme-color" content="#171724">
     <link rel="icon" href="assets/ruiz-corredor-mark.png" type="image/png">
-    <link rel="preload" as="image" href="assets/portada-paisaje-marionetas.webp">
+    <link rel="preload" as="image" href="assets/portada-paisaje-marionetas.webp" type="image/webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=seguros-agrupados-8">
+    <link rel="stylesheet" href="styles.css?v=one-page-20260812">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "InsuranceAgency",
+        "@id": "https://garjosma30-cyber.github.io/RuizCorredor/#business",
+        "name": "Ruiz Corredor de Seguros",
+        "url": "https://garjosma30-cyber.github.io/RuizCorredor/",
+        "logo": "https://garjosma30-cyber.github.io/RuizCorredor/assets/ruiz-corredor-mark.png",
+        "image": "https://garjosma30-cyber.github.io/RuizCorredor/assets/portada-paisaje-marionetas.png",
+        "founder": {
+          "@type": "Person",
+          "name": "José M. García Ruiz"
+        },
+        "areaServed": [
+          { "@type": "AdministrativeArea", "name": "Valladolid" },
+          { "@type": "Country", "name": "España" }
+        ],
+        "knowsAbout": [
+          "Seguros para microempresas",
+          "Seguros de alquiler",
+          "Seguros de salud con preexistencias"
+        ]
+      }
+    </script>
   </head>
   <body class="theme-night screen-page home-page">
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -33,7 +62,7 @@
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="Ruiz Corredor de Seguros, inicio">
           <img class="brand-mark" src="assets/ruiz-corredor-mark.png" alt="" width="44" height="50">
-          <span class="brand-copy"><img class="brand-wordmark" src="assets/ruiz-corredor-wordmark.png" alt="Ruiz Corredor"><small>Correduría Online</small><small>Correduría en Valladolid</small></span>
+          <span class="brand-copy"><small>Correduría Online</small><small>Correduría en Valladolid</small></span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
           <span></span><span></span><span></span><span class="sr-only">Abrir menú</span>
@@ -42,60 +71,173 @@
           <a href="sobre-mi.html#quienes-somos">Quiénes somos</a>
           <a class="nav-feature" href="sobre-mi.html#como-trabajamos">Cómo trabajamos</a>
           <a href="sobre-mi.html#donde-estamos">Dónde estamos</a>
-          <a href="otros-seguros.html">Seguros</a>
+          <a href="#especialidades">Seguros</a>
           <a class="nav-account" href="mi-cuenta.html" aria-label="Mi cuenta"><svg class="account-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.6-4 3-6 7-6s6.4 2 7 6"></path></svg><span class="account-tooltip" role="tooltip">Mi cuenta</span></a>
         </nav>
       </div>
     </header>
 
     <main id="contenido">
-      <section class="hero" id="inicio">
+      <section class="hero" id="inicio" aria-labelledby="titulo-inicio">
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <div class="hero-slogan">
-              <h1>Tu seguro debe encajar <em>contigo</em>, no al revés.</h1>
+              <h1 id="titulo-inicio">Tu seguro debe encajar <em>contigo</em>, no al revés.</h1>
               <p class="lead">Un corredor es un profesional que te ayuda a contratar el seguro que más te conviene. Trabajamos para ti.</p>
-              <div class="hero-actions" aria-label="Acciones principales">
+              <div class="hero-actions" role="group" aria-label="Acciones principales">
                 <a class="button primary" href="contacto.html">Cuéntame qué necesitas</a>
               </div>
+              <p class="home-scroll-hint">Elige una especialidad para bajar directamente a ella.</p>
             </div>
           </div>
 
-          <div class="hero-products">
-            <div class="hero-stories reveal" aria-label="Especialidades">
-              <a class="story-card story-card-wide" href="microempresas.html">
-                <img src="assets/portada-panadero-real.webp?v=panadera-20260719" alt="Panadera sonriente mostrando una bandeja de panes en su obrador">
+          <div class="hero-products" id="especialidades">
+            <div class="hero-stories reveal" role="group" aria-label="Especialidades">
+              <a class="story-card" href="#microempresas">
+                <img src="assets/portada-panadero-real.webp?v=panadera-20260719" alt="Panadera sonriente mostrando una bandeja de panes en su obrador" width="1672" height="941" decoding="async">
                 <span class="story-overlay"><small>Tu negocio</small><strong>Seguros para microempresas</strong></span>
               </a>
-              <a class="story-card" href="alquileres.html">
-                <img src="assets/portada-inquilinos-reales.webp" alt="Pareja joven estrenando su vivienda de alquiler">
+              <a class="story-card" href="#alquiler">
+                <img src="assets/portada-inquilinos-reales.webp" alt="Pareja joven estrenando su vivienda de alquiler" width="1672" height="941" decoding="async">
                 <span class="story-overlay"><small>Alquiler seguro</small><strong>Propietarios e inquilinos</strong></span>
               </a>
-              <a class="story-card" href="salud.html">
-                <img src="assets/portada-salud-real.webp?v=consulta-20260719" alt="Doctora conversando con una paciente durante una consulta médica">
+              <a class="story-card" href="#salud">
+                <img src="assets/portada-salud-real.webp?v=consulta-20260719" alt="Doctora conversando con una paciente durante una consulta médica" width="1448" height="1086" decoding="async">
                 <span class="story-overlay"><small>Salud</small><strong>Opciones con preexistencias</strong></span>
               </a>
+              <a class="story-card" href="#mas-seguros">
+                <img src="assets/otros-seguros-construccion.webp" alt="Casa en construcción con un equipo de trabajadores" width="1672" height="941" decoding="async">
+                <span class="story-overlay"><small>Otras necesidades</small><strong>Más seguros</strong></span>
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="home-mini-insurance reveal" aria-label="Seguros">
-              <a class="home-mini-card" href="otros-seguros.html">
-                <img src="assets/tarjeta-otros-averias.webp" alt="Maqueta textil de una avería en la vía pública" width="1254" height="1254" loading="lazy">
-                <span>Daños y averías</span>
+      <section class="home-specialty-section" id="microempresas" aria-labelledby="titulo-microempresas">
+        <div class="screen-card service-screen">
+          <div class="screen-intro reveal">
+            <a class="breadcrumb" href="#inicio">Volver al inicio</a>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Microempresas</p>
+            <h2 id="titulo-microempresas" class="home-specialty-title">Protege el negocio que has construido</h2>
+            <p>Una panadería, un taller o una pequeña oficina necesitan coberturas proporcionadas a su actividad real.</p>
+            <a class="button primary" href="contacto.html">Revisar mi negocio</a>
+            <a class="home-next-link" href="#alquiler">Siguiente: Alquiler seguro <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <figure class="screen-media reveal">
+            <img src="assets/panadero-marioneta.webp" alt="Panadero de marioneta dando la bienvenida a su negocio" width="1448" height="1086" loading="lazy" decoding="async">
+            <figcaption class="screen-media-action">
+              <a class="service-more-link" href="microempresas-informacion.html" aria-label="Información ampliada sobre seguros para microempresas">
+                <span class="service-more-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+                <span>Infórmate un poco más</span>
               </a>
-              <a class="home-mini-card" href="otros-seguros.html">
-                <img src="assets/tarjeta-otros-hogar.webp" alt="Maqueta textil de una vivienda" width="1254" height="1254" loading="lazy">
-                <span>Hogar</span>
+            </figcaption>
+          </figure>
+
+          <div class="screen-details reveal">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Qué revisamos</p>
+            <h2>Tres capas de protección</h2>
+            <ul class="screen-points">
+              <li><span>01</span><div><strong>Local y bienes</strong><p>Continente, equipos, mercancía, averías, robo, agua e incendio.</p></div></li>
+              <li><span>02</span><div><strong>Actividad y responsabilidad</strong><p>Daños a terceros, productos, trabajos fuera del local y pérdida de beneficios.</p></div></li>
+              <li><span>03</span><div><strong>La persona detrás</strong><p>Accidentes, baja laboral y continuidad para autónomos y pequeños equipos.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-specialty-section" id="alquiler" aria-labelledby="titulo-alquiler">
+        <div class="screen-card service-screen">
+          <div class="screen-intro reveal">
+            <a class="breadcrumb" href="#inicio">Volver al inicio</a>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Alquiler seguro</p>
+            <h2 id="titulo-alquiler" class="home-specialty-title">Alquilar con más tranquilidad</h2>
+            <p>Protección clara para propietarios e inquilinos, sin coberturas duplicadas ni responsabilidades confusas.</p>
+            <a class="button primary" href="contacto.html">Revisar mi alquiler</a>
+            <a class="home-next-link" href="#salud">Siguiente: Salud y preexistencias <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <figure class="screen-media reveal">
+            <img src="assets/jovenes-inquilinos-marioneta.webp" alt="Pareja joven de marionetas con las llaves y el contrato de su vivienda de alquiler" width="1672" height="941" loading="lazy" decoding="async">
+            <figcaption class="screen-media-action">
+              <a class="service-more-link" href="alquileres-informacion.html" aria-label="Información ampliada sobre seguros para alquileres e impago">
+                <span class="service-more-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+                <span>Infórmate un poco más</span>
               </a>
-              <a class="home-mini-card" href="otros-seguros.html">
-                <img src="assets/tarjeta-otros-auto.webp" alt="Maqueta textil de un automóvil" width="1254" height="1254" loading="lazy">
-                <span>Vehículos</span>
+            </figcaption>
+          </figure>
+
+          <div class="screen-details reveal">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Un hogar, dos perspectivas</p>
+            <h2>Cada parte protege algo diferente</h2>
+            <ul class="screen-points">
+              <li><span>01</span><div><strong>Si eres propietario</strong><p>Inmueble, impago de rentas, defensa jurídica y posibles actos vandálicos.</p></div></li>
+              <li><span>02</span><div><strong>Si eres inquilino</strong><p>Pertenencias, responsabilidad civil y asistencia ante incidentes domésticos.</p></div></li>
+              <li><span>03</span><div><strong>Condiciones claras</strong><p>Carencias, franquicias, requisitos y exclusiones explicados antes de contratar.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-specialty-section" id="salud" aria-labelledby="titulo-salud">
+        <div class="screen-card service-screen">
+          <div class="screen-intro reveal">
+            <a class="breadcrumb" href="#inicio">Volver al inicio</a>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Salud y preexistencias</p>
+            <h2 id="titulo-salud" class="home-specialty-title">Tu historial importa. Tus opciones también.</h2>
+            <p>Tener antecedentes médicos exige preparar mejor el caso y revisar con realismo la respuesta de cada aseguradora.</p>
+            <a class="button primary" href="contacto.html">Consultar mi situación</a>
+            <a class="home-next-link" href="#mas-seguros">Siguiente: Más seguros <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <figure class="screen-media reveal">
+            <img src="assets/salud-preexistencias-marioneta.webp" alt="Paciente mayor de marioneta acompañado por una profesional sanitaria durante su estancia hospitalaria" width="1672" height="941" loading="lazy" decoding="async">
+            <figcaption class="screen-media-action">
+              <a class="service-more-link" href="salud-informacion.html" aria-label="Información ampliada sobre seguros de salud y vida con preexistencias">
+                <span class="service-more-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+                <span>Infórmate un poco más</span>
               </a>
-              <a class="home-mini-card home-mini-card-wide" href="otros-seguros.html">
-                <img src="assets/otros-seguros-construccion.webp" alt="Casa en construcción con un equipo de trabajadores" width="1672" height="941" loading="lazy">
-                <span>Más seguros</span>
-              </a>
-            </div>
+            </figcaption>
+          </figure>
+
+          <div class="screen-details reveal">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Estudiar antes de solicitar</p>
+            <h2>Expectativas y condiciones claras</h2>
+            <ul class="screen-points">
+              <li><span>01</span><div><strong>Análisis previo</strong><p>Objetivo, cuestionario de salud y documentación que pueda ser necesaria.</p></div></li>
+              <li><span>02</span><div><strong>Comparación realista</strong><p>Carencias, exclusiones, sobreprimas y alternativas disponibles.</p></div></li>
+              <li><span>03</span><div><strong>Privacidad y acompañamiento</strong><p>Sin promesas de aceptación y usando un canal adecuado para los datos médicos.</p></div></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-specialty-section home-more-section" id="mas-seguros" aria-labelledby="titulo-mas-seguros">
+        <div class="screen-card service-screen">
+          <div class="screen-intro reveal">
+            <a class="breadcrumb" href="#inicio">Volver al inicio</a>
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Más seguros</p>
+            <h2 id="titulo-mas-seguros" class="home-specialty-title">La protección que falta por encajar</h2>
+            <p>También revisamos soluciones para tu vivienda, tus vehículos, tu familia y otras necesidades profesionales.</p>
+            <a class="button primary" href="otros-seguros.html">Ver todos los seguros</a>
+            <a class="home-next-link" href="#inicio">Volver al principio <span aria-hidden="true">↑</span></a>
+          </div>
+
+          <figure class="screen-media reveal">
+            <img src="assets/otros-seguros-construccion.webp" alt="Casa en construcción con un equipo de trabajadores" width="1672" height="941" loading="lazy" decoding="async">
+            <figcaption>Soluciones para particulares, autónomos y empresas</figcaption>
+          </figure>
+
+          <div class="screen-details reveal">
+            <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Otras necesidades</p>
+            <h2>Más formas de protegerte</h2>
+            <ul class="screen-points">
+              <li><span>01</span><div><strong>Hogar y comunidades</strong><p>Vivienda habitual, segunda residencia y comunidades de propietarios.</p></div></li>
+              <li><span>02</span><div><strong>Vehículos y movilidad</strong><p>Coches, motos, furgonetas y pequeñas flotas.</p></div></li>
+              <li><span>03</span><div><strong>Vida, accidentes y otros</strong><p>Protección familiar, responsabilidad civil, viajes, mascotas y ocio.</p></div></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -120,7 +262,7 @@
 
     <a class="budget-fab" href="presupuesto.html" aria-label="Abrir el presupuesto orientativo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"></rect><path d="M8 6h8v4H8zM8 14h2M14 14h2M8 18h2M14 18h2"></path></svg></a>
     <a class="whatsapp-fab whatsapp-fab-image" href="contacto.html" aria-label="Abrir la página de contacto">
-      <img src="assets/asesora-whatsapp-icon.webp" alt="">
+      <img src="assets/asesora-whatsapp-icon.webp" alt="" width="1254" height="1254" loading="lazy" decoding="async">
       <span class="fab-label">Contacto</span>
     </a>
     <script src="script.js?v=cookies-2"></script>
