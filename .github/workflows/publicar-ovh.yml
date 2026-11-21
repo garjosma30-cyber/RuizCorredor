@@ -22,20 +22,33 @@ permissions:
 jobs:
   publicar:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       FTP_SERVER: ftp.cluster129.hosting.ovh.net
       FTP_USERNAME: garciat
       LFTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      LFTP_AJUSTES: "set net:max-retries 1; set net:timeout 20; set net:reconnect-interval-base 5; set net:reconnect-interval-max 5; set ftp:ssl-allow yes"
       EVENTO: ${{ github.event_name }}
       ANTES: ${{ github.event.before }}
       AHORA: ${{ github.sha }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Instalar lftp
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Comprobar conexión con OVH
+        timeout-minutes: 3
+        run: |
+          [ -n "$LFTP_PASSWORD" ] || { echo "::error title=Falta la contraseña::El secreto FTP_PASSWORD no está guardado en el repositorio."; exit 1; }
+          if timeout 120 lftp -c "$LFTP_AJUSTES; open --env-password -u $FTP_USERNAME $FTP_SERVER; cls -1 /www/index.html" > salida.txt 2>&1; then
+            echo "::notice title=Conexión::Conexión con OVH correcta."
+          else
+            echo "::error title=Sin conexión con OVH::$(tail -n 3 salida.txt | tr '\n' ' ' | cut -c1-400)"
+            exit 1
+          fi
 
       - name: Preparar lista de archivos
         run: |
@@ -56,7 +69,7 @@ jobs:
         run: |
           [ -s lista.txt ] || { echo "Nada que subir"; exit 0; }
           {
-            echo "set cmd:fail-exit yes; set net:max-retries 2; set net:timeout 30"
+            echo "$LFTP_AJUSTES; set cmd:fail-exit yes"
             echo "open --env-password -u $FTP_USERNAME $FTP_SERVER"
             sed 's#^www/##' lista.txt | while read -r f; do
               d=$(dirname "$f")
@@ -64,27 +77,31 @@ jobs:
               echo "put -O \"/www/$d\" \"www/$f\""
             done
           } > subir.lftp
-          lftp -f subir.lftp
-          echo "Subidos $(wc -l < lista.txt) archivo(s)."
+          if lftp -f subir.lftp > salida.txt 2>&1; then
+            echo "::notice title=Publicado::Subidos $(wc -l < lista.txt) archivo(s): $(sed 's#^www/##' lista.txt | tr '\n' ' ' | cut -c1-600)"
+          else
+            echo "::error title=Error al subir::$(tail -n 3 salida.txt | tr '\n' ' ' | cut -c1-400)"
+            exit 1
+          fi
 
-      - name: Comprobar conexión y comparar con el servidor
+      - name: Comparar con el servidor
         if: github.event_name == 'workflow_dispatch'
         run: |
           mkdir -p servidor
           {
-            echo "set net:max-retries 2; set net:timeout 30"
+            echo "$LFTP_AJUSTES"
             echo "open --env-password -u $FTP_USERNAME $FTP_SERVER"
             sed 's#^www/##' lista.txt | while read -r f; do
               echo "get -O \"servidor/$(dirname "$f")\" \"/www/$f\""
             done
           } > bajar.lftp
-          lftp -f bajar.lftp > /dev/null 2>&1 || true
+          timeout 300 lftp -f bajar.lftp > /dev/null 2>&1 || true
           iguales=0; distintos=0; faltan=0
           while read -r f; do
             r=${f#www/}
-            if [ ! -f "servidor/$r" ]; then echo "NO ESTÁ EN EL SERVIDOR: $r"; faltan=$((faltan+1))
+            if [ ! -f "servidor/$r" ]; then echo "::warning::No está en el servidor: $r"; faltan=$((faltan+1))
             elif cmp -s "$f" "servidor/$r"; then iguales=$((iguales+1))
-            else echo "DISTINTO: $r"; distintos=$((distintos+1)); fi
+            else echo "::warning::Distinto del servidor: $r"; distintos=$((distintos+1)); fi
           done < lista.txt
-          echo "Iguales: $iguales · Distintos: $distintos · No están en el servidor: $faltan"
-          [ "$iguales" -gt 0 ] || { echo "No se pudo descargar nada: revisa la conexión o el secreto FTP_PASSWORD."; exit 1; }
+          echo "::notice title=Comparación::Iguales: $iguales · Distintos: $distintos · No están en el servidor: $faltan"
+          [ "$iguales" -gt 0 ] || { echo "::error::No se pudo descargar nada del servidor."; exit 1; }
