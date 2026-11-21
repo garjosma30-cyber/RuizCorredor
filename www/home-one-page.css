@@ -1,0 +1,1785 @@
+/* Portada original con información ampliada en la misma página. */
+
+.screen-page.home-page > main {
+  display: block;
+  min-height: 0;
+}
+
+.screen-page.home-page .hero {
+  min-height: calc(100dvh - 62px);
+  scroll-margin-top: 62px;
+}
+
+.screen-page.home-page .hero-products {
+  scroll-margin-top: 86px;
+}
+
+.home-specialty-section {
+  position: relative;
+  min-height: calc(100dvh - 62px);
+  display: flex;
+  align-items: center;
+  padding: clamp(34px, 5vh, 64px) 0;
+  scroll-margin-top: 62px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(23, 23, 36, 0.88);
+  text-shadow: 0 2px 12px rgba(7, 8, 18, 0.72);
+}
+
+#alquiler {
+  background: rgba(35, 34, 56, 0.9);
+}
+
+#salud {
+  background: rgba(20, 30, 42, 0.9);
+}
+
+#mas-seguros {
+  background: rgba(28, 25, 37, 0.92);
+}
+
+.home-specialty-section .screen-card {
+  max-height: none;
+}
+
+.home-specialty-section .screen-media {
+  height: min(58vh, 520px);
+  min-height: 340px;
+  aspect-ratio: auto;
+}
+
+.home-specialty-title {
+  max-width: 11ch;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.5rem, 4.6vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.home-next-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 2px;
+  color: #f3d59e;
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgba(243, 213, 158, 0.46);
+  text-underline-offset: 4px;
+}
+
+.home-next-link span {
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(243, 213, 158, 0.42);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.home-next-link:hover span,
+.home-next-link:focus-visible span {
+  background: rgba(243, 213, 158, 0.14);
+  transform: translateY(2px);
+}
+
+#mas-seguros .home-next-link:hover span,
+#mas-seguros .home-next-link:focus-visible span {
+  transform: translateY(-2px);
+}
+
+#danos-averias,
+#hogar,
+#vehiculos {
+  scroll-margin-top: 92px;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page .hero {
+    min-height: auto;
+  }
+
+  .home-specialty-section {
+    min-height: 0;
+    padding: 42px 0 54px;
+  }
+
+  .home-specialty-section .screen-media {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .home-specialty-title {
+    max-width: 13ch;
+    font-size: clamp(2.35rem, 8vw, 4rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-specialty-section {
+    padding: 34px 0 46px;
+  }
+
+  .home-specialty-section .screen-card {
+    width: min(100% - 24px, 720px);
+    padding: 8px;
+  }
+
+  .home-specialty-title {
+    font-size: clamp(2.25rem, 12vw, 3.35rem);
+  }
+}
+
+/* Sistema de módulos contenidos sobre un fondo gris muy claro. */
+
+.screen-page.home-page,
+.screen-page.home-page > main {
+  background: #f4f5f7;
+}
+
+.screen-page.home-page::before {
+  display: none;
+}
+
+.screen-page.home-page .hero {
+  min-height: calc(100dvh - 62px - 94px);
+  padding: clamp(28px, 4vh, 46px) 0;
+  background: #f4f5f7;
+}
+
+.screen-page.home-page .hero-grid {
+  width: min(1160px, calc(100% - 120px));
+  padding: clamp(22px, 2.5vw, 32px);
+  border-radius: 26px;
+  box-shadow: 0 18px 44px rgba(20, 32, 52, 0.16);
+}
+
+.screen-page.home-page .home-trust-bar {
+  padding: 0 0 28px;
+  border: 0;
+  background: #f4f5f7;
+}
+
+.screen-page.home-page .home-trust-bar::before {
+  display: none;
+}
+
+.screen-page.home-page .home-trust-grid {
+  width: min(1160px, calc(100% - 120px));
+  padding: 18px 24px;
+  border: 1px solid #e4e6eb;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(20, 32, 52, 0.08);
+}
+
+.screen-page.home-page .home-specialty-section,
+.screen-page.home-page #alquiler,
+.screen-page.home-page #salud,
+.screen-page.home-page #mas-seguros {
+  min-height: calc(100dvh - 62px);
+  padding: 28px 0;
+  border: 0;
+  background: #f4f5f7;
+}
+
+.screen-page.home-page .home-specialty-section .screen-card {
+  width: min(1160px, calc(100% - 120px));
+  padding: clamp(22px, 2.5vw, 32px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 26px;
+  background:
+    radial-gradient(560px 340px at 92% 0%, rgba(116, 103, 181, 0.2), transparent 68%),
+    linear-gradient(145deg, #0f1728 0%, #1b2940 58%, #171724 100%);
+  box-shadow: 0 18px 44px rgba(20, 32, 52, 0.16);
+}
+
+.screen-page.home-page {
+  padding-bottom: 94px;
+}
+
+.screen-page.home-page .insurance-dock {
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -10px 30px rgba(4, 8, 18, 0.24);
+}
+
+.screen-page.home-page .insurance-dock-inner {
+  min-height: 94px;
+  padding: 8px 0;
+}
+
+.screen-page.home-page .insurance-dock-copy strong {
+  font-size: clamp(0.96rem, 1.1vw, 1.14rem);
+}
+
+.screen-page.home-page .insurance-tab {
+  min-height: 72px;
+  grid-template-rows: 34px auto;
+  gap: 3px;
+  padding: 6px 5px;
+  border-radius: 13px;
+}
+
+.screen-page.home-page .insurance-tab-media {
+  width: 34px;
+  height: 34px;
+}
+
+.screen-page.home-page .insurance-dock-contact {
+  gap: 5px;
+}
+
+.screen-page.home-page .insurance-dock-cta {
+  min-height: 34px;
+  padding: 7px 12px;
+}
+
+.home-page > .whatsapp-fab {
+  bottom: 108px !important;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page {
+    padding-bottom: 80px;
+  }
+
+  .screen-page.home-page .hero {
+    min-height: auto;
+    padding: 22px 0 28px;
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-trust-grid,
+  .screen-page.home-page .home-specialty-section .screen-card {
+    width: min(720px, calc(100% - 30px));
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-specialty-section .screen-card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .screen-page.home-page .home-trust-bar {
+    padding-bottom: 22px;
+  }
+
+  .screen-page.home-page .home-trust-grid {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .screen-page.home-page .home-specialty-section,
+  .screen-page.home-page #alquiler,
+  .screen-page.home-page #salud,
+  .screen-page.home-page #mas-seguros {
+    min-height: 0;
+    padding: 22px 0;
+  }
+
+  .screen-page.home-page .insurance-dock-inner {
+    min-height: 80px;
+    padding: 7px 10px 6px;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-width: 88px;
+    min-height: 62px;
+    grid-template-rows: 28px auto;
+    padding: 5px;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 28px;
+    height: 28px;
+  }
+
+  .home-page > .whatsapp-fab {
+    bottom: 92px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page {
+    padding-bottom: 72px;
+  }
+
+  .screen-page.home-page .hero {
+    padding: 14px 0 20px;
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-trust-grid,
+  .screen-page.home-page .home-specialty-section .screen-card {
+    width: calc(100% - 20px);
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-specialty-section .screen-card {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .screen-page.home-page .home-trust-grid {
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .screen-page.home-page .home-specialty-section,
+  .screen-page.home-page #alquiler,
+  .screen-page.home-page #salud,
+  .screen-page.home-page #mas-seguros {
+    padding: 16px 0;
+  }
+
+  .screen-page.home-page .insurance-dock-inner {
+    min-height: 72px;
+    padding: 6px 7px 5px;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-width: 80px;
+    min-height: 58px;
+    grid-template-rows: 26px auto;
+    font-size: 0.61rem;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 26px;
+    height: 26px;
+  }
+
+  .home-page > .whatsapp-fab {
+    bottom: 84px !important;
+  }
+}
+
+/* Dirección visual de portada: fondo sobrio, cabecera integrada y señales de confianza. */
+
+.theme-night.screen-page.home-page .site-header {
+  background: rgba(15, 20, 32, 0.92);
+  border-bottom-color: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 10px 34px rgba(4, 8, 18, 0.18);
+  backdrop-filter: blur(18px) saturate(1.08);
+  -webkit-backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.screen-page.home-page .brand-mark {
+  filter: brightness(0) invert(1);
+  opacity: 0.94;
+}
+
+.screen-page.home-page .main-nav a[href*="quienes-somos"] {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: none;
+}
+
+.screen-page.home-page .hero {
+  isolation: isolate;
+  color: #fff;
+  background:
+    radial-gradient(780px 520px at 82% 4%, rgba(116, 103, 181, 0.22), transparent 62%),
+    radial-gradient(640px 460px at 2% 100%, rgba(231, 125, 53, 0.14), transparent 66%),
+    linear-gradient(145deg, #111827 0%, #1b2940 54%, #171724 100%);
+}
+
+.screen-page.home-page .hero::before {
+  display: block;
+  z-index: -1;
+  opacity: 0.55;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.screen-page.home-page .hero-slogan {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(145deg, rgba(15, 20, 34, 0.76), rgba(23, 29, 46, 0.58));
+  box-shadow: 0 26px 70px rgba(3, 7, 18, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.home-trust-bar {
+  position: relative;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(90deg, #111827 0%, #1c2639 50%, #171724 100%);
+}
+
+.home-trust-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(180px, 34vw);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e77d35, transparent);
+  transform: translateX(-50%);
+}
+
+.home-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.home-trust-grid p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 3px clamp(18px, 3vw, 42px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-trust-grid p:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.home-trust-grid p:last-child {
+  padding-right: 0;
+}
+
+.home-trust-grid strong {
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(1.02rem, 1.3vw, 1.2rem);
+  font-weight: 650;
+}
+
+.home-trust-grid span {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.home-specialty-title {
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(2.45rem, 4vw, 4.2rem);
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+@media (max-width: 980px) {
+  .home-trust-grid {
+    width: min(720px, calc(100% - 30px));
+  }
+
+  .home-specialty-title {
+    max-width: 13ch;
+    font-size: clamp(2.35rem, 8vw, 4rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page .hero::before {
+    background-size: 48px 48px;
+  }
+
+  .home-trust-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .home-trust-grid p,
+  .home-trust-grid p:first-child,
+  .home-trust-grid p:last-child {
+    padding: 0 0 0 15px;
+    border-left: 2px solid rgba(231, 125, 53, 0.7);
+  }
+
+  .home-specialty-title {
+    max-width: 100%;
+    font-size: clamp(2.2rem, 11vw, 3.15rem);
+  }
+}
+
+/* Navegación rápida de seguros inspirada en una botonera de contratación. */
+
+.screen-page.home-page {
+  padding-bottom: 116px;
+}
+
+.screen-page.home-page .hero {
+  min-height: calc(100dvh - 62px - 116px);
+}
+
+.insurance-dock {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 190;
+  color: #fff;
+  border-radius: 22px 22px 0 0;
+  background: linear-gradient(105deg, #c95629 0%, #e87932 56%, #f18f3f 100%);
+  box-shadow: 0 -18px 46px rgba(4, 8, 18, 0.34);
+}
+
+.insurance-dock-inner {
+  width: min(1720px, calc(100% - 36px));
+  min-height: 116px;
+  display: grid;
+  grid-template-columns: minmax(168px, 0.8fr) minmax(680px, 4fr) minmax(184px, 0.9fr);
+  gap: clamp(12px, 1.5vw, 24px);
+  align-items: center;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+.insurance-dock-copy {
+  display: grid;
+  gap: 2px;
+}
+
+.insurance-dock-copy strong {
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(1.02rem, 1.25vw, 1.28rem);
+  line-height: 1.08;
+}
+
+.insurance-dock-copy span {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.72rem;
+  font-weight: 650;
+}
+
+.insurance-tabs {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(78px, 1fr));
+  gap: 8px;
+}
+
+.insurance-tab {
+  min-width: 0;
+  min-height: 88px;
+  display: grid;
+  grid-template-rows: 42px auto;
+  gap: 5px;
+  place-items: center;
+  padding: 9px 6px 8px;
+  color: #1b1a2a;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 8px 20px rgba(91, 35, 14, 0.18);
+  font-size: clamp(0.65rem, 0.78vw, 0.78rem);
+  font-weight: 750;
+  line-height: 1.08;
+  text-align: center;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.insurance-tab-media {
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  border: 2px solid rgba(231, 125, 53, 0.72);
+  border-radius: 50%;
+  background: #f7eee7;
+}
+
+.insurance-tab-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+}
+
+.insurance-tab:hover,
+.insurance-tab:focus-visible {
+  color: #1b1a2a;
+  border-color: #fff;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(91, 35, 14, 0.27);
+  transform: translateY(-5px);
+}
+
+.insurance-tab.is-active,
+.insurance-tab[aria-current="location"] {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.24);
+  background: #171724;
+  box-shadow: 0 12px 28px rgba(23, 23, 36, 0.38);
+  transform: translateY(-5px);
+}
+
+.insurance-tab.is-active .insurance-tab-media,
+.insurance-tab[aria-current="location"] .insurance-tab-media {
+  border-color: #f3b26e;
+}
+
+.insurance-dock-contact {
+  display: grid;
+  gap: 7px;
+  justify-items: stretch;
+}
+
+.insurance-dock-phone {
+  display: grid;
+  justify-items: center;
+  color: #fff;
+  line-height: 1.05;
+}
+
+.insurance-dock-phone span {
+  font-size: 0.7rem;
+  font-weight: 650;
+  opacity: 0.76;
+}
+
+.insurance-dock-phone strong {
+  color: #fff;
+  font-size: clamp(0.98rem, 1.25vw, 1.24rem);
+}
+
+.insurance-dock-cta {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  color: #1b1a2a;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(91, 35, 14, 0.2);
+  font-size: 0.78rem;
+  font-weight: 800;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.insurance-dock-cta:hover,
+.insurance-dock-cta:focus-visible {
+  color: #1b1a2a;
+  box-shadow: 0 11px 22px rgba(91, 35, 14, 0.3);
+  transform: translateY(-2px);
+}
+
+.home-page > .whatsapp-fab {
+  top: auto !important;
+  right: 22px !important;
+  bottom: 132px !important;
+  z-index: 195 !important;
+}
+
+@media (max-width: 1320px) {
+  .insurance-dock-inner {
+    grid-template-columns: minmax(620px, 1fr) 156px;
+  }
+
+  .insurance-dock-copy {
+    display: none;
+  }
+
+  .insurance-dock-phone span {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page {
+    padding-bottom: 92px;
+  }
+
+  .screen-page.home-page .hero {
+    min-height: auto;
+  }
+
+  .insurance-dock {
+    border-radius: 18px 18px 0 0;
+  }
+
+  .insurance-dock-inner {
+    width: 100%;
+    min-height: 92px;
+    display: block;
+    padding: 10px 12px 9px;
+  }
+
+  .insurance-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 2px 2px 5px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.62) transparent;
+  }
+
+  .insurance-tab {
+    min-width: 94px;
+    min-height: 70px;
+    grid-template-rows: 32px auto;
+    gap: 3px;
+    padding: 7px 6px 6px;
+    border-radius: 13px;
+    scroll-snap-align: start;
+    font-size: 0.68rem;
+  }
+
+  .insurance-tab-media {
+    width: 32px;
+    height: 32px;
+  }
+
+  .insurance-dock-contact {
+    display: none;
+  }
+
+  .home-page > .whatsapp-fab {
+    right: 14px !important;
+    bottom: 106px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .screen-page.home-page {
+    padding-bottom: 82px;
+  }
+
+  .insurance-dock-inner {
+    min-height: 82px;
+    padding: 7px 8px 6px;
+  }
+
+  .insurance-tab {
+    min-width: 84px;
+    min-height: 66px;
+    grid-template-rows: 29px auto;
+    padding: 6px 5px 5px;
+    font-size: 0.64rem;
+  }
+
+  .insurance-tab-media {
+    width: 29px;
+    height: 29px;
+  }
+
+  .home-page > .whatsapp-fab {
+    bottom: 96px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .insurance-tab,
+  .insurance-dock-cta {
+    transition: none;
+  }
+
+  .insurance-tab:hover,
+  .insurance-tab:focus-visible,
+  .insurance-tab.is-active,
+  .insurance-tab[aria-current="location"],
+  .insurance-dock-cta:hover,
+  .insurance-dock-cta:focus-visible {
+    transform: none;
+  }
+}
+
+/* Portada sobre fondo blanco con el contenido reunido en un panel azul. */
+
+.screen-page.home-page .hero {
+  padding: clamp(34px, 5vh, 58px) 0;
+  background: #fff;
+}
+
+.screen-page.home-page .hero::before,
+.screen-page.home-page .hero-glow {
+  display: none;
+}
+
+.screen-page.home-page .hero-grid {
+  width: min(1260px, calc(100% - 80px));
+  padding: clamp(24px, 3vw, 38px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  background:
+    radial-gradient(620px 360px at 90% 0%, rgba(116, 103, 181, 0.25), transparent 66%),
+    radial-gradient(520px 320px at 0% 100%, rgba(231, 125, 53, 0.13), transparent 68%),
+    linear-gradient(145deg, #0f1728 0%, #1b2940 56%, #171724 100%);
+  box-shadow: 0 24px 58px rgba(20, 32, 52, 0.2);
+}
+
+.screen-page.home-page .hero-slogan {
+  padding: clamp(12px, 1.5vw, 22px);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.screen-page.home-page .home-trust-bar {
+  color: #171724;
+  border-top-color: #e5e8ee;
+  border-bottom-color: #e5e8ee;
+  background: #fff;
+}
+
+.screen-page.home-page .home-trust-grid p {
+  border-left-color: #e2e5ec;
+}
+
+.screen-page.home-page .home-trust-grid strong {
+  color: #171724;
+}
+
+.screen-page.home-page .home-trust-grid span {
+  color: #5d6472;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page .hero {
+    padding: 24px 0 34px;
+  }
+
+  .screen-page.home-page .hero-grid {
+    width: min(720px, calc(100% - 30px));
+    padding: 24px;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page .hero {
+    padding: 16px 0 26px;
+  }
+
+  .screen-page.home-page .hero-grid {
+    width: calc(100% - 24px);
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .screen-page.home-page .hero-slogan {
+    padding: 16px 10px 12px;
+  }
+
+  .screen-page.home-page .home-trust-grid p,
+  .screen-page.home-page .home-trust-grid p:first-child,
+  .screen-page.home-page .home-trust-grid p:last-child {
+    border-left-color: rgba(231, 125, 53, 0.72);
+  }
+}
+
+/* Prioridad final: proporciones compactas y fondo gris de la portada. */
+
+.screen-page.home-page .hero-grid {
+  background-image:
+    linear-gradient(90deg, rgba(10, 18, 32, 0.92) 0%, rgba(16, 29, 48, 0.72) 38%, rgba(17, 22, 34, 0.2) 100%),
+    linear-gradient(180deg, rgba(10, 18, 32, 0.04) 32%, rgba(10, 18, 32, 0.48) 100%),
+    url("assets/otros-seguros-construccion.webp");
+  background-position: center, center, center 48%;
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat;
+}
+
+.screen-page.home-page #mas-seguros .screen-card {
+  border-color: rgba(255, 224, 196, 0.34);
+  background:
+    radial-gradient(560px 340px at 92% 0%, rgba(255, 222, 180, 0.2), transparent 68%),
+    linear-gradient(145deg, #9b3517 0%, #c95629 54%, #ef9344 100%);
+  box-shadow: 0 18px 44px rgba(126, 48, 17, 0.24);
+}
+
+.screen-page.home-page #mas-seguros .screen-points li {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(94, 28, 9, 0.2);
+}
+
+.screen-page.home-page #mas-seguros .breadcrumb,
+.screen-page.home-page #mas-seguros .eyebrow,
+.screen-page.home-page #mas-seguros .home-next-link {
+  color: #fff4e8;
+}
+
+.screen-page.home-page #mas-seguros .button.primary {
+  color: #fff;
+  background: #171724;
+  box-shadow: 0 10px 24px rgba(56, 20, 8, 0.34);
+}
+
+.screen-page.home-page #mas-seguros .button.primary:hover,
+.screen-page.home-page #mas-seguros .button.primary:focus-visible {
+  background: #25243a;
+}
+
+.screen-page.home-page,
+.screen-page.home-page > main,
+.screen-page.home-page .hero,
+.screen-page.home-page .home-trust-bar {
+  background: #f4f5f7;
+}
+
+.screen-page.home-page {
+  padding-bottom: 94px;
+}
+
+.screen-page.home-page .hero {
+  min-height: calc(100dvh - 62px - 94px);
+  padding: clamp(28px, 4vh, 46px) 0;
+}
+
+.screen-page.home-page .hero-grid {
+  width: min(1160px, calc(100% - 120px));
+  padding: clamp(22px, 2.5vw, 32px);
+  border-radius: 26px;
+  box-shadow: 0 18px 44px rgba(20, 32, 52, 0.16);
+}
+
+.screen-page.home-page .home-trust-bar {
+  padding: 0 0 28px;
+  border: 0;
+}
+
+.screen-page.home-page .home-trust-grid {
+  width: min(1160px, calc(100% - 120px));
+  padding: 18px 24px;
+  border: 1px solid #e4e6eb;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(20, 32, 52, 0.08);
+}
+
+.screen-page.home-page .insurance-dock {
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 -10px 30px rgba(4, 8, 18, 0.24);
+}
+
+.screen-page.home-page .insurance-dock-inner {
+  min-height: 94px;
+  padding: 8px 0;
+}
+
+.screen-page.home-page .insurance-tab {
+  min-height: 72px;
+  grid-template-rows: 34px auto;
+  gap: 3px;
+  padding: 6px 5px;
+  border-radius: 13px;
+}
+
+.screen-page.home-page .insurance-tab-media {
+  width: 34px;
+  height: 34px;
+}
+
+.home-page > .whatsapp-fab {
+  bottom: 108px !important;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page {
+    padding-bottom: 80px;
+  }
+
+  .screen-page.home-page .hero {
+    min-height: auto;
+    padding: 22px 0 28px;
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-trust-grid {
+    width: min(720px, calc(100% - 30px));
+  }
+
+  .screen-page.home-page .hero-grid {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .screen-page.home-page .home-trust-bar {
+    padding-bottom: 22px;
+  }
+
+  .screen-page.home-page .home-trust-grid {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .screen-page.home-page .insurance-dock-inner {
+    min-height: 80px;
+    padding: 7px 10px 6px;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-width: 88px;
+    min-height: 62px;
+    grid-template-rows: 28px auto;
+    padding: 5px;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 28px;
+    height: 28px;
+  }
+
+  .home-page > .whatsapp-fab {
+    bottom: 92px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page .hero-grid {
+    background-image:
+      linear-gradient(180deg, rgba(10, 18, 32, 0.9) 0%, rgba(16, 29, 48, 0.72) 50%, rgba(17, 22, 34, 0.54) 100%),
+      url("assets/otros-seguros-construccion.webp");
+    background-position: center, 58% center;
+    background-size: cover, cover;
+  }
+
+  .screen-page.home-page {
+    padding-bottom: 72px;
+  }
+
+  .screen-page.home-page .hero {
+    padding: 14px 0 20px;
+  }
+
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-trust-grid {
+    width: calc(100% - 20px);
+  }
+
+  .screen-page.home-page .hero-grid {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .screen-page.home-page .home-trust-grid {
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .screen-page.home-page .insurance-dock-inner {
+    min-height: 72px;
+    padding: 6px 7px 5px;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-width: 80px;
+    min-height: 58px;
+    grid-template-rows: 26px auto;
+    font-size: 0.61rem;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 26px;
+    height: 26px;
+  }
+
+  .home-page > .whatsapp-fab {
+    bottom: 84px !important;
+  }
+}
+
+/* Ajustes finales: banda compacta, alquiler legible y acentos de color. */
+
+.screen-page.home-page {
+  padding-bottom: 72px;
+}
+
+.screen-page.home-page .insurance-dock {
+  border-radius: 0;
+}
+
+.screen-page.home-page .insurance-dock-inner {
+  min-height: 72px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.screen-page.home-page .insurance-tab {
+  min-height: 72px;
+  border-radius: 12px;
+}
+
+.screen-page.home-page #alquiler .home-specialty-title {
+  max-width: 100%;
+  font-size: clamp(2.4rem, 3.4vw, 3.5rem);
+}
+
+.screen-page.home-page #mas-seguros .screen-card {
+  box-shadow: none;
+}
+
+.screen-page.home-page #mas-seguros .screen-media {
+  box-shadow: none;
+}
+
+.screen-page.home-page > .whatsapp-fab {
+  bottom: 86px !important;
+  animation: none;
+  background: linear-gradient(135deg, #233652 0%, #171724 100%);
+  box-shadow: 0 14px 32px rgba(20, 32, 52, 0.3);
+}
+
+.screen-page.home-page > .whatsapp-fab .whatsapp-mark {
+  color: #d9652a;
+}
+
+.screen-page.home-page > .whatsapp-fab:hover,
+.screen-page.home-page > .whatsapp-fab:focus-visible {
+  box-shadow: 0 17px 38px rgba(20, 32, 52, 0.38);
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page {
+    padding-bottom: 72px;
+  }
+
+  .screen-page.home-page .insurance-dock-inner,
+  .screen-page.home-page .insurance-tab {
+    min-height: 72px;
+  }
+
+  .screen-page.home-page > .whatsapp-fab {
+    bottom: 86px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page {
+    padding-bottom: 66px;
+  }
+
+  .screen-page.home-page .insurance-dock-inner,
+  .screen-page.home-page .insurance-tab {
+    min-height: 66px;
+  }
+
+  .screen-page.home-page #alquiler .home-specialty-title {
+    font-size: clamp(2.15rem, 10vw, 3rem);
+  }
+
+  .screen-page.home-page > .whatsapp-fab {
+    bottom: 80px !important;
+  }
+}
+
+/* Cabecera clara en dos niveles, inspirada en la jerarquía de Línea Directa. */
+
+.screen-page.home-page > .site-header.home-header {
+  position: static;
+  top: auto;
+  z-index: 2;
+  flex: none;
+  border: 0;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.screen-page.home-page .home-header .header-inner {
+  width: min(1450px, calc(100% - 72px));
+  min-height: 66px;
+  gap: 24px;
+}
+
+.screen-page.home-page .home-header .brand {
+  grid-template-columns: 34px 164px;
+  grid-template-rows: 40px;
+  gap: 0 8px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #16233a 0%, #233652 100%);
+  box-shadow: none;
+}
+
+.screen-page.home-page .home-header .brand-mark {
+  width: 34px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.screen-page.home-page .home-header .brand-copy {
+  width: 164px;
+  max-width: 164px;
+}
+
+.screen-page.home-page .home-header .brand-copy small,
+.screen-page.home-page .home-header .brand-copy::after {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 0.64rem;
+}
+
+.home-account-button {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 8px 20px;
+  color: #c95629;
+  border: 1px solid #d9652a;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.88rem;
+  font-weight: 750;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.home-account-button:hover,
+.home-account-button:focus-visible {
+  color: #fff;
+  background: #d9652a;
+}
+
+.home-account-icon {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.home-info-strip {
+  position: static;
+  z-index: 1;
+  color: #171724;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f7f7f8;
+}
+
+.home-info-strip-inner {
+  width: min(1450px, calc(100% - 72px));
+  min-height: 68px;
+  display: grid;
+  grid-template-columns: minmax(330px, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.home-info-message {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.home-info-mark {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  flex: none;
+  place-items: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #d9652a;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.home-info-message p {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  margin: 0;
+}
+
+.home-info-message strong {
+  color: #171724;
+  font-size: 0.78rem;
+  letter-spacing: 0.035em;
+}
+
+.home-info-message p span {
+  color: #646b78;
+  font-size: 0.76rem;
+}
+
+.home-info-links {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.home-info-links a {
+  padding: 8px 12px;
+  color: #25243a;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.home-info-links a:hover,
+.home-info-links a:focus-visible {
+  color: #b94720;
+  background: #fff;
+}
+
+.screen-page.home-page .hero-grid {
+  background-image:
+    linear-gradient(90deg, rgba(10, 18, 32, 0.74) 0%, rgba(16, 29, 48, 0.46) 39%, rgba(17, 22, 34, 0.06) 100%),
+    linear-gradient(180deg, rgba(10, 18, 32, 0.01) 34%, rgba(10, 18, 32, 0.3) 100%),
+    url("assets/otros-seguros-construccion.webp");
+}
+
+.screen-page.home-page .hero {
+  min-height: calc(100dvh - 134px - 72px);
+}
+
+.screen-page.home-page .hero,
+.screen-page.home-page .hero-products,
+.screen-page.home-page .home-specialty-section,
+.screen-page.home-page #danos-averias,
+.screen-page.home-page #hogar,
+.screen-page.home-page #vehiculos {
+  scroll-margin-top: 14px;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page .home-header .header-inner,
+  .home-info-strip-inner {
+    width: min(720px, calc(100% - 30px));
+  }
+
+  .home-info-strip-inner {
+    min-height: 84px;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 10px 0;
+  }
+
+  .home-info-links {
+    padding-left: 36px;
+  }
+
+  .screen-page.home-page .hero {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page .home-header .header-inner {
+    width: calc(100% - 20px);
+    min-height: 60px;
+    gap: 10px;
+  }
+
+  .screen-page.home-page .home-header .brand {
+    grid-template-columns: 30px 136px;
+    grid-template-rows: 36px;
+    padding: 5px 10px;
+  }
+
+  .screen-page.home-page .home-header .brand-mark {
+    width: 30px;
+    height: 36px;
+  }
+
+  .screen-page.home-page .home-header .brand-copy {
+    width: 136px;
+    max-width: 136px;
+  }
+
+  .screen-page.home-page .home-header .brand-copy small,
+  .screen-page.home-page .home-header .brand-copy::after {
+    font-size: 0.54rem;
+  }
+
+  .home-account-button {
+    min-height: 36px;
+    padding: 7px 12px;
+    font-size: 0.75rem;
+  }
+
+  .home-account-icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .home-info-strip-inner {
+    width: calc(100% - 24px);
+    min-height: 0;
+    padding: 10px 0 11px;
+  }
+
+  .home-info-message p span {
+    display: none;
+  }
+
+  .home-info-links {
+    gap: 3px;
+    padding-left: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .home-info-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-info-links a {
+    padding: 7px 9px;
+    font-size: 0.72rem;
+  }
+
+  .screen-page.home-page .hero-grid {
+    background-image:
+      linear-gradient(180deg, rgba(10, 18, 32, 0.64) 0%, rgba(16, 29, 48, 0.42) 52%, rgba(17, 22, 34, 0.25) 100%),
+      url("assets/otros-seguros-construccion.webp");
+  }
+}
+
+/* Cuatro accesos compactos en el banner inferior de escritorio. */
+@media (min-width: 981px) {
+  .screen-page.home-page .insurance-tabs {
+    grid-template-columns: repeat(4, minmax(90px, 116px));
+    justify-content: center;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-height: 58px;
+    grid-template-rows: 28px auto;
+    padding: 4px 6px;
+    font-size: 0.66rem;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Franja de confianza a todo el ancho y transiciones sin fondo gris. */
+.screen-page.home-page .hero,
+.screen-page.home-page .home-trust-bar,
+.screen-page.home-page #microempresas {
+  background-color: #fff;
+}
+
+.screen-page.home-page .hero {
+  min-height: 0;
+  padding-bottom: 16px;
+}
+
+.screen-page.home-page .home-trust-bar {
+  padding-bottom: 0;
+}
+
+.screen-page.home-page .home-trust-grid {
+  width: 100%;
+  max-width: none;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.screen-page.home-page .home-trust-grid p:first-child {
+  padding-left: clamp(18px, 3vw, 42px);
+}
+
+.screen-page.home-page .home-trust-grid p:last-child {
+  padding-right: clamp(18px, 3vw, 42px);
+}
+
+.screen-page.home-page #microempresas {
+  min-height: 0;
+  padding-top: 16px;
+}
+
+@media (max-width: 980px) {
+  .screen-page.home-page .hero {
+    padding-bottom: 10px;
+  }
+
+  .screen-page.home-page #microempresas {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page .hero {
+    padding-bottom: 8px;
+  }
+
+  .screen-page.home-page .home-trust-grid {
+    padding: 18px 16px;
+  }
+
+  .screen-page.home-page .home-trust-grid p,
+  .screen-page.home-page .home-trust-grid p:first-child,
+  .screen-page.home-page .home-trust-grid p:last-child {
+    padding: 0 0 0 15px;
+  }
+
+  .screen-page.home-page #microempresas {
+    padding-top: 8px;
+  }
+}
+
+/* Ritmo final de la portada: módulos más horizontales, separados y alternos. */
+.screen-page.home-page :is(#salud, #alquiler, #microempresas, #mas-seguros).home-specialty-section {
+  min-height: 0;
+  padding-block: 14px;
+}
+
+.screen-page.home-page #salud .screen-card {
+  border-color: rgba(166, 195, 229, 0.2);
+  background:
+    radial-gradient(620px 340px at 94% 0%, rgba(231, 125, 53, 0.16), transparent 68%),
+    linear-gradient(145deg, #0e1a2e 0%, #1d3554 58%, #171724 100%);
+}
+
+.screen-page.home-page #microempresas .screen-card {
+  border-color: rgba(170, 205, 238, 0.22);
+  background:
+    radial-gradient(620px 340px at 92% 0%, rgba(118, 174, 221, 0.2), transparent 68%),
+    linear-gradient(145deg, #10213a 0%, #224d73 56%, #182238 100%);
+  box-shadow: 0 18px 44px rgba(19, 52, 82, 0.2);
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .screen-card {
+  color: #171724;
+  border-color: #e1e5eb;
+  background: #fff;
+  box-shadow: 0 18px 44px rgba(20, 32, 52, 0.12);
+  text-shadow: none;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) :is(.home-specialty-title, .screen-details h2, .screen-points strong) {
+  color: #171724;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .screen-intro > p:not(.eyebrow),
+.screen-page.home-page :is(#alquiler, #mas-seguros) .screen-points p {
+  color: #5d6472;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) :is(.breadcrumb, .eyebrow, .home-next-link) {
+  color: #b94720;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .dot {
+  background: #d9652a;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .home-next-link span {
+  border-color: rgba(185, 71, 32, 0.38);
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .home-next-link:hover span,
+.screen-page.home-page :is(#alquiler, #mas-seguros) .home-next-link:focus-visible span {
+  background: rgba(217, 101, 42, 0.1);
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .screen-points li {
+  border-color: #e2e6ec;
+  background: #f5f6f8;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .button.primary {
+  color: #fff;
+  background: #d9652a;
+  box-shadow: 0 10px 24px rgba(185, 71, 32, 0.22);
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .button.primary:hover,
+.screen-page.home-page :is(#alquiler, #mas-seguros) .button.primary:focus-visible {
+  background: #b94720;
+}
+
+.screen-page.home-page :is(#alquiler, #mas-seguros) .screen-media {
+  border-color: #e1e5eb;
+  box-shadow: 0 16px 36px rgba(20, 32, 52, 0.14);
+}
+
+.screen-page.home-page .screen-media-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  cursor: pointer;
+}
+
+.screen-page.home-page .screen-media-image-link:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -6px;
+}
+
+.screen-page.home-page .home-specialty-section :is(.screen-intro, .screen-details) {
+  gap: 10px;
+}
+
+.screen-page.home-page .home-specialty-section .screen-details h2 {
+  font-size: clamp(1.75rem, 2.35vw, 2.5rem);
+}
+
+.screen-page.home-page .home-specialty-section .screen-points {
+  gap: 6px;
+}
+
+.screen-page.home-page .home-specialty-section .screen-points li {
+  grid-template-columns: 30px 1fr;
+  gap: 9px;
+  padding: 6px 10px;
+  border-radius: 13px;
+}
+
+.screen-page.home-page .home-specialty-section .screen-points li > span {
+  width: 29px;
+  height: 29px;
+  border-radius: 9px;
+}
+
+@media (min-width: 981px) {
+  .screen-page.home-page .hero-grid,
+  .screen-page.home-page .home-specialty-section .screen-card {
+    width: min(1320px, calc(100% - 56px));
+  }
+
+  .screen-page.home-page .hero-grid {
+    padding: clamp(22px, 2vw, 28px);
+  }
+
+  .screen-page.home-page .hero-slogan {
+    gap: 14px;
+    padding: 12px;
+  }
+
+  .screen-page.home-page .hero-slogan h1 {
+    font-size: clamp(2.55rem, 3.5vw, 3.2rem);
+  }
+
+  .screen-page.home-page .home-specialty-section .screen-card {
+    padding: clamp(18px, 1.8vw, 26px);
+    gap: clamp(18px, 2vw, 30px);
+  }
+
+  .screen-page.home-page :is(#salud, #alquiler, #microempresas, #mas-seguros) .home-specialty-title {
+    max-width: 14ch;
+    font-size: clamp(2.35rem, 3.2vw, 3.5rem);
+    line-height: 1;
+  }
+
+  .screen-page.home-page .home-specialty-section .screen-media {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .screen-page.home-page .hero-stories .story-card,
+  .screen-page.home-page .hero-stories .story-card-wide {
+    min-height: clamp(230px, 34vh, 300px);
+  }
+}
+
+@media (min-width: 981px) {
+  .screen-page.home-page :is(#salud, #microempresas) .service-screen {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+
+  .screen-page.home-page :is(#salud, #microempresas) .screen-media {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page :is(#salud, #microempresas) .screen-intro {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page :is(#salud, #microempresas) .screen-details {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page #alquiler .service-screen {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) minmax(0, 1.15fr);
+  }
+
+  .screen-page.home-page #alquiler .screen-intro {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page #alquiler .screen-details {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page #alquiler .screen-media {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .screen-page.home-page #mas-seguros .service-screen {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.15fr) minmax(0, 1.05fr);
+  }
+
+  .screen-page.home-page :is(#salud, #alquiler, #microempresas) .screen-media {
+    height: auto;
+    min-height: 320px;
+    align-self: stretch;
+    aspect-ratio: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .screen-page.home-page :is(#salud, #alquiler, #microempresas, #mas-seguros).home-specialty-section {
+    padding-block: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .screen-page.home-page {
+    padding-bottom: 53px;
+  }
+
+  .screen-page.home-page .insurance-dock-inner {
+    min-height: 53px;
+    padding: 2px 6px;
+  }
+
+  .screen-page.home-page .insurance-tabs {
+    gap: 5px;
+    padding: 0;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  .screen-page.home-page .insurance-tab {
+    min-width: 0;
+    min-height: 49px;
+    flex: 1 1 0;
+    grid-template-rows: 18px auto;
+    gap: 1px;
+    padding: 2px 3px;
+    border-radius: 9px;
+    font-size: 0.52rem;
+    line-height: 1.02;
+  }
+
+  .screen-page.home-page .insurance-tab-media {
+    width: 18px;
+    height: 18px;
+    border-width: 1px;
+  }
+
+  .screen-page.home-page > .whatsapp-fab {
+    bottom: 67px !important;
+  }
+}

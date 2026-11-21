@@ -1,9 +1,6 @@
-# Ruiz Corredor
+# García Corredor de Seguros
 
-Versión pública y estática del sitio de Ruiz Corredor, preparada para GitHub Pages.
+Código de la web pública [garciacorredor.com](https://garciacorredor.com/).
 
-- Sitio en construcción y contenido no contractual.
-- Formulario de contacto adaptado para abrir el cliente de correo del visitante.
-- Área privada mostrada únicamente como demostración no operativa.
-- Sin dominio personalizado ni backend PHP.
-
+- `www/` es una copia de la carpeta `/www` del alojamiento de OVHcloud (solo la parte pública: HTML, CSS, JavaScript e imágenes).
+- Los archivos PHP del servidor (área privada y formulario de contacto) no están en este repositorio y no se tocan desde aquí.

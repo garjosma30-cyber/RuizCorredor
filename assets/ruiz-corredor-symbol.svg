@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title id="title">Simbolo Ruiz Corredor</title>
-  <desc id="desc">Marca geometrica con las letras R y C</desc>
-  <rect width="128" height="128" rx="18" fill="#23233a"/>
-  <path d="M30 98V30h34c16 0 27 9 27 23 0 10-5 18-14 21l23 24H78L57 76h-9v22H30Zm18-37h15c7 0 11-3 11-9s-4-9-11-9H48v18Z" fill="#fff"/>
-  <path d="M88 33c-14 0-25 9-25 23s11 24 25 24c5 0 10-1 15-4v-16c-4 3-8 5-13 5-7 0-12-4-12-10 0-7 5-11 13-11 4 0 8 1 12 4V36c-4-2-9-3-15-3Z" fill="#d96652"/>
-</svg>

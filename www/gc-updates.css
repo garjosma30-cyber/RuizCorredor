@@ -1,0 +1,211 @@
+/* Shared public information, preserving the existing brand and typography. */
+.gc-cookie-notice{position:fixed;z-index:10000;left:20px;bottom:calc(var(--gc-dock-height,0px) + 14px + env(safe-area-inset-bottom,0px));width:min(410px,calc(100% - 40px));box-sizing:border-box;padding:19px 21px 17px;border:1px solid #dce2e9;border-top:4px solid #e98032;border-radius:17px;background:#fff;color:#192e49;box-shadow:0 8px 35px #152c4930;font-family:Inter,Arial,sans-serif;text-align:left;max-height:calc(100dvh - var(--gc-dock-height,0px) - 30px);overflow:auto}
+.gc-cookie-notice h2{margin:0 0 7px;font:700 16px/1.35 Inter,Arial,sans-serif;color:#192e49;text-shadow:none;letter-spacing:0}
+.gc-cookie-notice p{margin:0 0 14px;font-size:13px;line-height:1.55;color:#40516a;text-shadow:none}
+.gc-cookie-actions{display:flex;align-items:center;gap:17px;flex-wrap:wrap}
+.gc-cookie-actions button{appearance:none;cursor:pointer;border:0;border-radius:9px;padding:11px 17px;min-height:44px;background:#f39a4f;color:#172c47;font:700 13px/1.4 Inter,Arial,sans-serif}
+.gc-cookie-actions a{font-size:13px;font-weight:600;color:#192e49;text-decoration:underline;text-underline-offset:3px;min-height:44px;display:inline-flex;align-items:center}
+.gc-cookie-actions :focus-visible,.gc-primary:focus-visible,.gc-secondary:focus-visible,.gc-offers a:focus-visible{outline:3px solid #1b3657;outline-offset:4px}
+.gc-cookie-actions button:hover{background:#ffb16c}
+.gc-legal{max-width:850px;color:#23364e;overflow-wrap:anywhere}
+.gc-legal h2{scroll-margin-top:100px}
+.gc-legal h3{font-size:19px;margin:0 0 8px;color:#1b304e}
+.gc-legal-index{display:flex;gap:10px 18px;flex-wrap:wrap;padding:18px 0 25px;border-bottom:1px solid #dfe5ed;margin-bottom:30px}
+.gc-legal-index a{font-size:14px}
+.gc-purpose{padding:20px 23px;background:#f4f6f9;border-left:3px solid #ed8a40;border-radius:0 12px 12px 0;margin:20px 0}
+.gc-purpose p:last-child{margin-bottom:0}
+.gc-service-page{padding-top:45px;padding-bottom:60px;min-height:65vh;color:#20354f}
+.gc-service-card{max-width:940px;margin:0 auto;padding:clamp(25px,5vw,60px);border:1px solid #dfe6ef;border-top:5px solid #e58135;border-radius:23px;background:#fff;box-shadow:0 15px 50px #16365a0d}
+.gc-service-card h1{font-family:Fraunces,Georgia,serif;font-size:clamp(31px,4vw,49px);line-height:1.12;color:#1c304b;margin:10px 0 22px;letter-spacing:-.025em}
+.gc-kicker{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9f4716;margin:0}
+.gc-service-card .gc-lead{font-size:17px;line-height:1.7;color:#43546c;max-width:720px}
+.gc-contact-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:28px 0 35px}
+.gc-primary,.gc-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 21px;border-radius:11px;font-weight:750;font-size:14px;text-decoration:none!important;line-height:1.5;box-sizing:border-box}
+.gc-primary{background:#f39a4f;color:#172c47!important;border:1px solid #f39a4f}
+.gc-secondary{background:#fff;color:#1b304e!important;border:1px solid #bac7d7}
+.gc-email{flex-basis:100%;font-weight:600;color:#203a5d;overflow-wrap:anywhere;margin-top:6px}
+.gc-service-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;border-top:1px solid #e1e7ee;padding-top:24px}
+.gc-service-grid h2{font:600 23px/1.3 Fraunces,Georgia,serif;color:#1d3350;margin:0 0 12px}
+.gc-service-grid p,.gc-small{font-size:14px;line-height:1.75;color:#4c5e75}
+.gc-construction{text-align:center;padding-top:70px;padding-bottom:70px;max-width:780px}
+.gc-construction .gc-lead{max-width:550px;margin:0 auto 27px}
+.gc-public-page .main-nav a,.gc-public-page .main-nav a:visited{color:#243a56!important;text-shadow:none}
+.gc-public-page .main-nav .nav-cta,.gc-public-page .main-nav .nav-cta:visited{color:#fff!important}
+.gc-public-page .nav-toggle span:not(.sr-only){background:#243a56}
+.contact-page .screen-main{display:block!important;height:auto!important;overflow:visible!important;padding-bottom:35px}
+.contact-page .contact-screen{height:auto!important;min-height:0!important;overflow:visible!important}
+.contact-page .screen-intro{padding:clamp(24px,3vw,34px);border-radius:18px;background:#142a45ef;text-shadow:none}
+.contact-page .screen-intro h1,.contact-page .screen-intro p{color:#fff;text-shadow:none}
+.contact-page .screen-intro .eyebrow{color:#f5b47c}
+.contact-page .contact-direct{gap:14px}
+.contact-page .contact-direct a{max-width:100%;overflow-wrap:anywhere;white-space:normal}
+.contact-page .screen-intro{min-width:0}
+.contact-page .contact-direct .gc-primary{align-self:flex-start;text-shadow:none;text-decoration:none}
+.contact-page .contact-form{background:#fff;color:#1d334f;padding:clamp(21px,3vw,32px);border-radius:18px;border:1px solid #e0e5ee;box-shadow:0 12px 35px #182d4920}
+.contact-page .contact-form label,.contact-page .contact-form p,.contact-page .contact-form .field-help{color:#273d59;text-shadow:none}
+.contact-page .contact-form .privacy-layer,.contact-page .contact-form .privacy-layer p{color:#45556c;background:transparent;font-size:12px;line-height:1.65}
+.contact-page .contact-form a{color:#20476c;text-shadow:none;overflow-wrap:anywhere}
+.contact-page .contact-form input,.contact-page .contact-form textarea{border:1px solid #b2bfd0;color:#1b304c;background:#fff}
+.contact-page .contact-form input:focus-visible,.contact-page .contact-form textarea:focus-visible{outline:3px solid #df863e;outline-offset:2px}
+.contact-page .contact-form .field-error{color:#9f2121;text-shadow:none}
+.contact-page .contact-form .contact-submit{color:#172c47!important;background:#f39a4f!important;text-shadow:none}
+.gc-offers{box-sizing:border-box;width:min(1100px,calc(100% - 40px));margin:35px auto 10px;padding:25px 30px;border:1px solid #dce3ec;border-radius:18px;background:#fff;color:#263c57;text-shadow:none;clear:both}
+.gc-offers h2{font:600 25px/1.3 Fraunces,Georgia,serif;color:#1c304b;margin:0 0 12px;text-shadow:none}
+.gc-offers p{font-size:14px;line-height:1.75;color:#42556e;text-shadow:none;max-width:850px}
+.gc-offer-actions{display:flex;gap:12px 25px;flex-wrap:wrap;margin:16px 0}
+.gc-offers a{color:#25476b;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+@media(max-width:600px){
+ .gc-cookie-notice{left:12px;width:calc(100% - 24px);padding:14px 16px 11px;border-radius:14px}
+ .gc-cookie-notice h2{font-size:15px}.gc-cookie-notice p{font-size:12px;line-height:1.55;margin-bottom:8px}
+ .gc-cookie-actions{gap:15px}.gc-cookie-actions button,.gc-cookie-actions a{font-size:12px}
+ .gc-cookie-open .whatsapp-fab,.gc-cookie-open .budget-fab{visibility:hidden!important}
+ .gc-service-page{padding-top:25px}.gc-service-card{padding:25px 20px;border-radius:17px}
+ .gc-service-grid{grid-template-columns:1fr;gap:16px}.gc-contact-actions{align-items:stretch;flex-direction:column}.gc-contact-actions a{width:100%;font-size:13px}
+ .gc-service-card .gc-lead{font-size:15px}.gc-purpose{padding:17px}.gc-legal-index{gap:8px 14px}
+ .gc-offers{width:calc(100% - 28px);padding:22px 20px}.gc-offer-actions{flex-direction:column;gap:14px}
+}
+@media(prefers-reduced-motion:reduce){.gc-cookie-notice *{transition:none!important;animation:none!important}}
+
+/* Consistent public navigation, with the existing navy, white and orange brand. */
+body .site-header.gc-header{position:sticky!important;top:0!important;z-index:200!important;flex:none;background:#fff!important;color:#1c304b;border:0;border-bottom:1px solid #dfe5ec;box-shadow:0 2px 12px #192e4908;backdrop-filter:none;-webkit-backdrop-filter:none}
+body .gc-header .header-inner{position:relative;width:min(1320px,calc(100% - 48px));min-height:76px;gap:16px;display:flex;align-items:center}
+body .gc-header .brand{grid-template-columns:32px auto;grid-template-rows:40px;gap:9px;padding:7px 12px;border-radius:12px;background:#1c304b;flex-shrink:0;min-width:0}
+body .gc-header .brand-mark{width:32px;height:38px;filter:brightness(0) invert(1)}
+body .gc-header .brand .brand-copy{width:auto;max-width:none;display:grid;gap:4px}
+body .gc-header .brand .brand-copy::after{display:none}
+body .gc-header .brand strong{font:750 15px/1.1 Inter,Arial,sans-serif;color:#fff;letter-spacing:-.02em}
+body .gc-header .brand .brand-copy small{font:500 10px/1.2 Inter,Arial,sans-serif;color:#fff;white-space:nowrap}
+body .gc-header .main-nav{margin-left:auto;gap:3px}
+body .gc-header .main-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;font-size:13px;line-height:1.35;font-weight:650;color:#243a56!important;background:transparent;box-shadow:none;transform:none;text-shadow:none;border-radius:9px}
+body .gc-header .main-nav a:hover,body .gc-header .main-nav a[aria-current="page"]{color:#9b421b!important;background:#fff0e4;box-shadow:none;transform:none}
+body .gc-header .main-nav .nav-cta{background:#f39a4f!important;color:#172c47!important;padding-inline:17px;box-shadow:none!important}
+body .gc-header .main-nav .nav-cta:visited{color:#172c47!important}
+body .gc-header .main-nav .nav-cta:hover{background:#ffb16c}
+body .gc-header .gc-client-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 17px;border:1px solid #d78343;border-radius:9px;color:#934019;background:#fff;font:700 13px/1.3 Inter,Arial,sans-serif;white-space:nowrap;text-decoration:none;flex-shrink:0}
+body .gc-header .gc-client-link:hover,body .gc-header .gc-client-link[aria-current="page"]{background:#fff0e4}
+body .gc-header a:focus-visible,body .gc-header button:focus-visible{outline:3px solid #c15c20;outline-offset:3px}
+body .gc-header .nav-toggle{order:3;flex-shrink:0;background:#fff;border:1px solid #c3cedc;border-radius:9px}
+body .gc-header .nav-toggle span:not(.sr-only){background:#20354f}
+body .gc-header .gc-client-link{order:2}
+body .gc-header .main-nav{order:1}
+body .gc-header .brand{order:0}
+body .home-info-strip-inner{width:min(1320px,calc(100% - 48px));min-height:64px;gap:20px}
+.screen-page.home-page :is(.hero,.hero-products,.home-specialty-section,#danos-averias,#hogar,#vehiculos){scroll-margin-top:92px}
+
+/* Three specialties get their own space; additional insurance sits below. */
+.screen-page.home-page .hero{padding:24px 0 32px}
+.screen-page.home-page .hero-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);width:min(1320px,calc(100% - 48px));padding:clamp(26px,3vw,44px);gap:clamp(28px,4vw,58px);align-items:center}
+.screen-page.home-page .hero-slogan{padding:0;gap:24px}
+.screen-page.home-page .hero-slogan h1{font-size:clamp(2.5rem,3.8vw,3.5rem);line-height:1.08;max-width:14ch}
+.screen-page.home-page .hero-slogan .lead{font-size:17px;line-height:1.65;max-width:36ch}
+.screen-page.home-page .hero-products{display:grid;gap:18px;align-content:start}
+.screen-page.home-page .gc-specialties-heading{font:650 17px/1.45 Inter,Arial,sans-serif;color:#fff;text-shadow:0 2px 8px #10243d;margin:0;letter-spacing:0;max-width:none;width:100%}
+.screen-page.home-page .hero-stories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.screen-page.home-page .hero-stories .story-card{min-height:200px;aspect-ratio:auto;border-radius:16px}
+.screen-page.home-page .hero-stories .story-card-wide{grid-column:1/-1;min-height:230px}
+.screen-page.home-page .hero-stories .story-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.screen-page.home-page .hero-stories .story-card-wide img{object-position:50% 20%}
+.screen-page.home-page .story-overlay{padding:20px}
+.screen-page.home-page .story-overlay strong{font-size:18px;line-height:1.25}
+.screen-page.home-page .story-overlay small{font-size:11px;margin-bottom:5px}
+.screen-page.home-page .gc-other-options{padding:40px 0 28px;background:#fff;color:#1c304b;text-shadow:none}
+.gc-other-options>.container{width:min(1320px,calc(100% - 48px))}
+.gc-options-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}
+.gc-options-heading h2{margin:0;color:#1c304b;font:600 clamp(23px,2.4vw,30px)/1.25 Fraunces,Georgia,serif;max-width:30ch}
+.gc-options-heading>a{color:#984119;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px;white-space:nowrap;padding-block:12px}
+.gc-other-options .home-mini-insurance{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:0}
+.gc-other-options .home-mini-card{min-height:130px;border-radius:13px}
+.gc-other-options .home-mini-card span{font-size:16px;line-height:1.3;padding:16px}
+.screen-page.home-page :is(#salud,#alquiler,#microempresas,#mas-seguros).home-specialty-section{padding-block:24px}
+
+/* A shorter form presentation, with full information one click away. */
+.contact-page .contact-screen{width:min(1180px,calc(100% - 48px));grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:28px;padding:0}
+.contact-page .screen-main{padding-top:30px}
+.contact-page .screen-intro h1{font-size:clamp(32px,3.3vw,45px);line-height:1.12}
+.contact-page .screen-intro>p{font-size:15px;line-height:1.7}
+.contact-page .contact-form{gap:13px}
+.contact-page .gc-form-heading{margin-bottom:5px}
+.contact-page .gc-form-heading h2{margin:0 0 6px;color:#1c304b;font:600 26px/1.2 Fraunces,Georgia,serif;text-shadow:none}
+.contact-page .gc-form-heading p{margin:0;color:#52647b;font-size:13px;line-height:1.5}
+.gc-contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-page .contact-form .privacy-layer.gc-privacy-summary{padding:14px 16px;background:#f4f6f9;border:1px solid #e2e7ed;border-radius:10px;gap:8px;margin:0}
+.contact-page .contact-form .gc-privacy-summary p{font-size:12px;line-height:1.6;margin:0}
+.gc-privacy-details{margin-top:4px}
+.gc-privacy-details summary{cursor:pointer;color:#20476c;font-size:12px;font-weight:700;line-height:1.5;padding:8px 0;text-decoration:underline;text-underline-offset:3px}
+.gc-privacy-details summary:focus-visible{outline:3px solid #c15c20;outline-offset:3px}
+.gc-privacy-details>div{display:grid;gap:10px;margin-top:6px;padding-top:10px;border-top:1px solid #d7e0eb}
+.contact-page .contact-form .checkbox-row{font-size:12px;line-height:1.5}
+.contact-page .contact-form .contact-submit{min-height:48px;font-size:14px}
+.contact-page .contact-form .form-note{font-size:11px;line-height:1.5;margin:0}
+
+@media(max-width:1100px){
+ body .gc-header .header-inner{gap:10px}
+ body .gc-header .main-nav a{padding-inline:9px;font-size:12px}
+}
+@media(max-width:980px){
+ body .gc-header .header-inner{min-height:70px;width:calc(100% - 32px);gap:10px}
+ body .gc-header .brand{margin-right:auto}
+ body .gc-header .nav-toggle{display:block}
+ body .gc-header .main-nav{position:absolute;inset:calc(100% + 8px) 0 auto auto;display:none;width:min(360px,calc(100vw - 32px));margin:0;padding:12px;background:#fff;border:1px solid #d8e0e9;box-shadow:0 15px 35px #1c304b26;max-height:calc(100dvh - 95px);overflow:auto}
+ body .gc-header .main-nav.is-open{display:grid;gap:5px}
+ body .gc-header .main-nav a{justify-content:flex-start;font-size:14px;padding:12px 15px;min-height:46px}
+ body .home-info-strip-inner{width:calc(100% - 32px)}
+ .screen-page.home-page .hero-grid{grid-template-columns:1fr;gap:32px;width:calc(100% - 32px);padding:30px}
+ .screen-page.home-page .hero-slogan h1{font-size:clamp(34px,5vw,46px);max-width:18ch}
+ .screen-page.home-page .hero-slogan .lead{max-width:48ch}
+ .screen-page.home-page .hero-stories{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+ .screen-page.home-page .hero-stories .story-card-wide{grid-column:auto}
+ .screen-page.home-page .hero-stories .story-card{min-height:240px}
+ .screen-page.home-page .story-overlay{padding:15px}
+ .screen-page.home-page .story-overlay strong{font-size:16px}
+ .gc-other-options>.container{width:calc(100% - 32px)}
+ .gc-other-options .home-mini-insurance{gap:12px}
+ .contact-page .contact-screen{grid-template-columns:1fr;width:min(660px,calc(100% - 32px));gap:22px}
+}
+@media(max-width:640px){
+ body .gc-header .header-inner{width:calc(100% - 24px);min-height:66px;gap:8px}
+ body .gc-header .brand{grid-template-columns:26px auto;grid-template-rows:34px;gap:7px;padding:6px 9px;border-radius:10px}
+ body .gc-header .brand-mark{width:26px;height:32px}
+ body .gc-header .brand strong{font-size:12px}
+ body .gc-header .brand .brand-copy small{font-size:8.5px}
+ body .gc-header .gc-client-link{padding:8px 10px;font-size:12px}
+ .screen-page.home-page .hero{padding:18px 0 24px}
+ .screen-page.home-page .hero-grid{width:calc(100% - 24px);padding:25px 20px;gap:34px}
+ .screen-page.home-page .hero-slogan{gap:20px}
+ .screen-page.home-page .hero-slogan h1{font-size:36px;max-width:14ch}
+ .screen-page.home-page .hero-slogan .lead{font-size:16px;line-height:1.65}
+ .screen-page.home-page .hero-stories{grid-template-columns:1fr;gap:18px}
+ .screen-page.home-page .hero-stories .story-card{min-height:200px}
+ .screen-page.home-page .story-overlay{padding:20px}
+ .screen-page.home-page .story-overlay strong{font-size:19px}
+ .screen-page.home-page .gc-specialties-heading{font-size:16px}
+ .screen-page.home-page .gc-other-options{padding:30px 0 18px}
+ .gc-options-heading{display:block;margin-bottom:16px}
+ .gc-options-heading>a{display:inline-block;margin-top:5px}
+ .gc-other-options .home-mini-insurance{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+ .gc-other-options .home-mini-card{min-height:115px}
+ .gc-other-options .home-mini-card span{padding:12px;font-size:14px}
+ .screen-page.home-page .insurance-dock-inner{min-height:64px;padding:4px 6px calc(4px + env(safe-area-inset-bottom,0px))}
+ .screen-page.home-page .insurance-tabs{display:flex;gap:5px;padding:0;overflow:visible}
+ .screen-page.home-page .insurance-tab{min-width:0;flex:1 1 0;min-height:56px;grid-template-rows:23px auto;gap:4px;padding:3px 2px;font-size:12px;line-height:1.2;font-weight:750;border-radius:9px}
+ .screen-page.home-page .insurance-tab-media{width:23px;height:23px;border-width:1px}
+ .screen-page.home-page{padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+ .screen-page.home-page>.whatsapp-fab{bottom:calc(80px + env(safe-area-inset-bottom,0px))!important}
+ .contact-page .screen-main{padding-top:20px}
+ .contact-page .contact-screen{width:calc(100% - 24px)}
+ .contact-page .screen-intro,.contact-page .contact-form{padding:23px 20px}
+ .contact-page .screen-intro h1{font-size:33px}
+ .gc-contact-fields{grid-template-columns:1fr;gap:13px}
+ .contact-page .contact-form input,.contact-page .contact-form textarea{font-size:16px}
+ .contact-page .contact-form .privacy-layer.gc-privacy-summary{padding:12px}
+}
+@media(max-width:350px){
+ body .gc-header .header-inner{width:calc(100% - 16px);gap:6px}
+ body .gc-header .brand{padding:6px;gap:5px;grid-template-columns:23px auto}
+ body .gc-header .brand-mark{width:23px}
+ body .gc-header .brand strong{font-size:11px}
+ body .gc-header .brand .brand-copy small{font-size:8px}
+ body .gc-header .gc-client-link{padding-inline:8px}
+ .screen-page.home-page .hero-slogan h1{font-size:31px}
+ .screen-page.home-page .insurance-tab{font-size:11px}
+}
